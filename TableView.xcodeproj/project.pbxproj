@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		EBD8BB161D87764B005B1B4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD8BB151D87764B005B1B4E /* AppDelegate.swift */; };
 		EBD8BB181D87764B005B1B4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD8BB171D87764B005B1B4E /* ViewController.swift */; };
-		EBD8BB1B1D87764B005B1B4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD8BB191D87764B005B1B4E /* Main.storyboard */; };
 		EBD8BB1D1D87764B005B1B4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBD8BB1C1D87764B005B1B4E /* Assets.xcassets */; };
 		EBD8BB201D87764B005B1B4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD8BB1E1D87764B005B1B4E /* LaunchScreen.storyboard */; };
+		EBD8BB291D878059005B1B4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBD8BB191D87764B005B1B4E /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					EBD8BB111D87764B005B1B4E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 66TFW9PS7V;
 					};
 				};
 			};
@@ -122,9 +123,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBD8BB291D878059005B1B4E /* Main.storyboard in Resources */,
 				EBD8BB201D87764B005B1B4E /* LaunchScreen.storyboard in Resources */,
 				EBD8BB1D1D87764B005B1B4E /* Assets.xcassets in Resources */,
-				EBD8BB1B1D87764B005B1B4E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +252,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.senacrs.edm.gt.TableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +266,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.senacrs.edm.gt.TableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
